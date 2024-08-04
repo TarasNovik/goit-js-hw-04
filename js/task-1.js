@@ -4,8 +4,8 @@ function isEnoughCapacity(products, containerSize) {
     for (const key in products) {
         summeZal.push(products[key]);
     }
-    const summe = 0;
-    for (const element of summeZal) {
+    let summe = 0;
+    for (let element of summeZal) {
         summe = summe + element;
     }
     if (summe <= containerSize) {
