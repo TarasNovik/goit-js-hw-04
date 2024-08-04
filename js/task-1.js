@@ -8,7 +8,7 @@ function isEnoughCapacity(products, containerSize) {
     for (let element of summeZal) {
         summe = summe + summeZal[element];
     }
-    if (summe <= containerSize) {
+    if (summe >= containerSize) {
         return (true);
     }
     else { return (false); };
