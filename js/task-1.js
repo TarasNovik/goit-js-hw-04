@@ -6,12 +6,12 @@ function isEnoughCapacity(products, containerSize) {
     }
     let summe = 0;
     for (let element of summeZal) {
-        summe = summe + element;
+        summe = summe + summeZal[element];
     }
     if (summe <= containerSize) {
-        return (true)
+        return (true);
     }
-    else { return (false) };
+    else { return (false); };
 
 }
 
