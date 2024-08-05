@@ -5,15 +5,18 @@ function isEnoughCapacity(products, containerSize) {
         summeZal.push(products[key]);
     }
     let summe = 0;
-    for (let element of summeZal) {
-        summe = (summe + summeZal[element]);
+    for (let i = 0; i < summeZal.length; i += 1) {
+        summe = summe + summeZal[i];
     }
     if (summe <= containerSize) {
         return (true);
-    }
-    else { return (false); }
 
+    } else {
+        return (false);
+
+    }
 }
+
 
 console.log(
     isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
